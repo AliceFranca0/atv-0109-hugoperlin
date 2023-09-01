@@ -94,6 +94,17 @@ public class App{
     
     }
 
+    private static boolean adicionarContaVetor(ContaBancaria[] conta){
+
+        for(int i=0;i<contas).length;i++{
+            if(contas[i]!=null) {
+                System.out.println("["+i+"]->"+ pessoas[i].toString());
+            } else{
+                System.out.println("["+i+"]-> Livre");
+            }
+        }
+    }
+
     private static void mostrarVetorPessoas(Pessoa[] pessoas){
         System.out.println("###Pessoas Cadastradas###");
         for(int i=0;i<pessoas.length;i++){
@@ -111,7 +122,8 @@ public class App{
         scan = new Scanner(System.in);
 
         //declarar
-        ContaBancaria conta=null;        
+        ContaBancaria conta=null;   
+        ContaBancaria     
         Pessoa pessoa=null;
         Pessoa[] pessoas = new Pessoa[10];
         
@@ -138,6 +150,8 @@ public class App{
                 break;
                 case 3:
                     conta = cadastrarConta();
+                    boolean resultado1 = adicionarContaVetor(conta);
+
                 break;
                 case 4:
                     System.out.println("Dados da conta");
