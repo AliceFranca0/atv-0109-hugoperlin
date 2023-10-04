@@ -113,6 +113,12 @@ public class App{
         scan = new Scanner(System.in);
 
         banco = new Banco1509();
+        //declarar
+        ContaBancaria conta=null;   
+        ContaBancaria     
+        Pessoa pessoa=null;
+        Pessoa[] pessoas = new Pessoa[10];
+        
         
         int opcao;
 
@@ -130,6 +136,10 @@ public class App{
                 break;
                 case 3:
                     cadastrarConta();
+
+                    conta = cadastrarConta();
+                    boolean resultado1 = adicionarContaVetor(conta);
+
                 break;
                 case 4:
                     mostrarContas();
@@ -148,7 +158,3 @@ public class App{
 
 
 }
-
-
-//git config --local user.name "Hugo"
-//git config --local user.email "haperlin@gmail.com"
