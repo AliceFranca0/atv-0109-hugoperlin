@@ -60,10 +60,6 @@ public String toString {
 
 }
 
-    public void add(Lista lista) {
-    }
-
-
 //arrumar
 
 
